@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matthew Luu — Portfolio</title>
+<meta name="description" content="Wheel-thrower, home cook, and travel photographer — with music and AI projects on the side.">
+
+<!-- Google Fonts: swap these two families here (and in the CSS font stacks)
+     if you want a different sans/serif pairing. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================= NAV ============================= -->
+<header class="site-nav" id="siteNav">
+  <div class="wrap">
+    <!-- EDIT: your name / logotype -->
+    <a href="#top" class="brand">Matthew Luu</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#pottery">Pottery</a>
+      <a href="#cooking">Food and Cooking</a>
+      <a href="#photography">Photography</a>
+      <a href="#music">Sound</a>
+      <a href="#ai-projects">AI Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================= LANDING ============================= -->
+<section class="hero" id="top">
+  <div class="wrap hero__main">
+    <div>
+      <!-- EDIT: name -->
+      <h1 class="hero__title">Matthew Luu</h1>
+      <!-- EDIT: one-line description of what you do -->
+      <p class="hero__tagline">ceramicist &nbsp;·&nbsp; food lover &nbsp;·&nbsp; occasional photographer and vlogger &nbsp;·&nbsp; dj &nbsp;·&nbsp; ai tinkerer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="about" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>About</h2>
+    </div>
+
+    <div class="about-grid">
+      <!-- Portrait. Points at images/portrait.jpeg — if you swap in a
+           .jpg/.png instead, update the data-src and file extension. -->
+      <div class="photo" style="--ar:4/5;" data-src="images/portrait.jpeg" data-name="portrait.jpeg">
+        <span class="photo__label">portrait.jpeg</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div>
+        <!-- EDIT: bio -->
+        <p class="about-bio">
+          Jack of all trades, master of none, and mostly at peace with that.
+          Time gets split between the pottery wheel, the kitchen, and
+          wherever the camera ends up next, with DJing and a rotating cast
+          of AI side projects filling in the gaps. Nothing's fully mastered,
+          but nothing's collecting dust either.
+        </p>
+
+        <dl class="about-facts">
+          <div>
+            <dt>Based in</dt>
+            <!-- EDIT: location -->
+            <dd>Toronto, Canada</dd>
+          </div>
+          <div>
+            <dt>Pottery</dt>
+            <dd>Functional &amp; decorative wheel thrown ceramics</dd>
+          </div>
+          <div>
+            <dt>Cooking and Food</dt>
+            <dd>My credentials are being top 1% in Toronto on Beli</dd>
+          </div>
+          <div>
+            <dt>Gear</dt>
+            <dd>Fuji X100VI &amp; DJI Osmo Pocket 3. Aspiring Leica owner.</dd>
+          </div>
+          <div>
+            <dt>Music</dt>
+            <dd>John Summit wannabe</dd>
+          </div>
+          <div>
+            <dt>AI Projects</dt>
+            <!-- EDIT: tools / focus areas -->
+            <dd>Playing around with Claude and making games featuring my rabbit</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================= POTTERY ============================= -->
+<section id="pottery" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Pottery</h2>
+    </div>
+
+    <div class="grid-section__body">
+
+      <!-- 2x2 split grid: photo, photo, caption, photo — 3 photos + one
+           caption cell, caption bottom-left here. This rotates per
+           section: Pottery=bottom-left, Cooking=bottom-right,
+           Photography=bottom-left, and so on. To swap a photo, replace
+           the data-src filename — see README in this folder. -->
+      <div class="cluster">
+        <!-- Drop files in /images/pottery/ using these exact names -->
+        <div class="split-grid">
+          <div class="photo" style="--ar:3/2;" data-src="images/pottery/pottery-01.jpg" data-name="pottery-01.jpg">
+            <span class="photo__label">pottery-01.jpg</span>
+          </div>
+          <div class="photo" style="--ar:3/2;" data-src="images/pottery/pottery-03.jpg" data-name="pottery-03.jpg">
+            <span class="photo__label">pottery-03.jpg</span>
+          </div>
+          <!-- EDIT: your caption/blurb for this section -->
+          <div class="caption-block">
+            <p class="caption-block__text">Moon jars are still giving me trouble. I've thrown a handful that came out right, but most sessions end with something lopsided or cracked in the kiln.</p>
+          </div>
+          <div class="photo" style="--ar:3/2; background-position: center top;" data-src="images/pottery/pottery-02.jpg" data-name="pottery-02.jpg">
+            <span class="photo__label">pottery-02.jpg</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================= COOKING ============================= -->
+<section id="cooking" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Food and Cooking</h2>
+    </div>
+
+    <div class="grid-section__body">
+
+      <!-- 2x2 split grid: photo, photo, photo, caption — caption
+           bottom-right here (rotated from Pottery's bottom-left). -->
+      <div class="cluster">
+        <!-- Drop files in /images/cooking/ using these exact names -->
+        <div class="split-grid">
+          <div class="photo" style="--ar:3/2;" data-src="images/cooking/cooking-01.jpg" data-name="cooking-01.jpg">
+            <span class="photo__label">cooking-01.jpg</span>
+          </div>
+          <div class="photo" style="--ar:3/2;" data-src="images/cooking/cooking-02.jpg" data-name="cooking-02.jpg">
+            <span class="photo__label">cooking-02.jpg</span>
+          </div>
+          <div class="photo" style="--ar:3/2;" data-src="images/cooking/cooking-03.jpg" data-name="cooking-03.jpg">
+            <span class="photo__label">cooking-03.jpg</span>
+          </div>
+          <!-- EDIT: your caption/blurb for this section -->
+          <div class="caption-block">
+            <p class="caption-block__text">The long-term plan is a supper club: my own food, on my own dinnerware, for a small table of people. It's still an idea more than a plan right now, no venue or date set, but the dish list keeps growing.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================= PHOTOGRAPHY ============================= -->
+<section id="photography" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Photography</h2>
+    </div>
+
+    <div class="grid-section__body">
+
+      <!-- 2x2 split grid: caption, photo, photo, photo — caption
+           top-left here. -->
+      <div class="cluster">
+        <!-- Drop files in /images/photography/ using these exact names -->
+        <div class="split-grid">
+          <!-- EDIT: your caption/blurb for this section -->
+          <div class="caption-block">
+            <p class="caption-block__text">A place changes the second you leave it. These are the small proofs that it existed, at least for a moment, exactly as it was.</p>
+          </div>
+          <div class="photo" style="--ar:3/2;" data-src="images/photography/photo-02.jpg" data-name="photo-02.jpg">
+            <span class="photo__label">photo-02.jpg</span>
+          </div>
+          <div class="photo" style="--ar:3/2;" data-src="images/photography/photo-01.jpg" data-name="photo-01.jpg">
+            <span class="photo__label">photo-01.jpg</span>
+          </div>
+          <div class="photo" style="--ar:3/2;" data-src="images/photography/photo-03.jpg" data-name="photo-03.jpg">
+            <span class="photo__label">photo-03.jpg</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================= MUSIC ============================= -->
+<section id="music" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Sound</h2>
+    </div>
+
+    <div class="grid-section__body">
+
+      <!-- Live / practice photos. Spans/ratios are set to each photo's
+           native aspect ratio so the row fills edge-to-edge with no crop. -->
+      <div class="cluster">
+        <!-- Drop files in /images/music/ using these exact names.
+             Both boxes share --ar:4/5 so they render the same size;
+             music-03 matches natively, music-01 gets a mild crop. -->
+        <div class="photo-grid">
+          <div class="photo span-6" style="--ar:4/5;" data-src="images/music/music-01.jpeg" data-name="music-01.jpeg">
+            <span class="photo__label">music-01.jpeg</span>
+          </div>
+          <div class="photo span-6" style="--ar:4/5;" data-src="images/music/music-03.jpeg" data-name="music-03.jpeg">
+            <span class="photo__label">music-03.jpeg</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recordings — SoundCloud mixes. To add another, copy an
+           .audio-ph link and point href at the new SoundCloud share URL. -->
+      <div class="cluster">
+        <div class="audio-list">
+          <a class="audio-ph" href="https://on.soundcloud.com/tJbGJTtwwj48I4RNIq" target="_blank" rel="noopener">
+            <span class="audio-ph__play"></span>
+            <span class="audio-ph__label">Mix 001</span>
+          </a>
+          <a class="audio-ph" href="https://on.soundcloud.com/d9rSCEEjPDxTOVdJ3P" target="_blank" rel="noopener">
+            <span class="audio-ph__play"></span>
+            <span class="audio-ph__label">Mix 002</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================= AI PROJECTS ============================= -->
+<section id="ai-projects" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>AI Projects</h2>
+    </div>
+
+    <div class="grid-section__body">
+
+      <div class="cluster">
+        <!-- EDIT: one <li class="project"> per project — swap the
+             thumbnail path (images/ai/...), title, description, and link
+             href for the real thing. Add more <li>s the same way. -->
+        <ul class="project-list">
+          <li class="project">
+            <div class="photo project__thumb" style="--ar:1/1;" data-src="images/ai/ai-01.png" data-name="ai-01.png">
+              <span class="photo__label">ai-01.png</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">Barry's Veggie Dash</h3>
+              <p class="project__desc">I built this with Claude Code so my friends could share in my love for my rabbit Barry</p>
+            </div>
+            <a href="https://mattyluuser.github.io/Barry-s-Veggie-Dash/" class="project__link" target="_blank" rel="noopener">View →</a>
+          </li>
+          <li class="project">
+            <div class="photo project__thumb" style="--ar:1/1;" data-src="images/ai/ai-02.png" data-name="ai-02.png">
+              <span class="photo__label">ai-02.png</span>
+            </div>
+            <div class="project__info">
+              <h3 class="project__title">Elaine's Bothersome Tracker</h3>
+              <p class="project__desc">Tracking when, what, and how, bothersome my friend Elaine is.</p>
+            </div>
+            <a href="https://mattyluuser.github.io/elaine-tracker/" class="project__link" target="_blank" rel="noopener">View →</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============================= CONTACT ============================= -->
+<section id="contact" class="section-pad">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Contact</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <!-- EDIT: contact email -->
+        <a class="contact-email" href="mailto:matthewcluu@gmail.com">matthewcluu@gmail.com</a>
+      </div>
+
+      <div>
+        <ul class="social-list">
+          <li><a href="https://www.instagram.com/handstoplate/" target="_blank" rel="noopener">Instagram — Food &amp; Pottery <span class="arrow">→</span></a></li>
+          <li><a href="https://www.instagram.com/luucidmusic/" target="_blank" rel="noopener">Instagram — Music <span class="arrow">→</span></a></li>
+          <li><a href="https://www.youtube.com/@mattyluuser" target="_blank" rel="noopener">YouTube <span class="arrow">→</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span class="eyebrow">© 2026 Matthew Luu</span>
+  <span class="tag">Wheel · Kitchen · Road · Sound · Code</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
